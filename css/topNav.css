@@ -1,0 +1,43 @@
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.clearf:after,
+.clearf:before {
+    /* 清除浮动:因为高度为0,无法设置背景颜色等,故需清除浮动 */
+    content: "";
+    height:0;
+    visivility:hidden;
+    display: block;
+    clear: both;
+}
+
+.fright {
+    display: block;
+    float: right;
+}
+
+.fleft {
+    display: block;
+    float: left;
+}
+
+/*----以上 ，工具类----*/
+
+.top-nav {
+    color: #0C0C0C;
+    background-color: #1E9FFF;
+    box-shadow: 0px 0px 5px #999999; /*盒子阴影，水平偏移，垂直偏移，模糊度，颜色*/
+}
+
+.top-logo a i,
+.top-nav li a{
+    color: #0C0C0C;
+}
+
+.top-nav li a:hover {
+    background-color: rgba(255,255,255,.5);
+}

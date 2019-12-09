@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+}
+
+
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.clearf:after,
+.clearf:before {
+    /* 清除浮动:因为高度为0,无法设置背景颜色等,故需清除浮动 */
+    content: "";
+    height:0;
+    visivility:hidden;
+    display: block;
+    clear: both;
+}
+
+.fright {
+    display: block;
+    float: right;
+}
+
+.fleft {
+    display: block;
+    float: left;
+}
+
+/*---------------以上为工具类------------------------------*/
+.head {
+    margin-bottom: 20px;
+}
+
+.top-nav {
+    /*为了使 top-nav显示在最上面，使用定位流z-index*/
+    position: relative;
+    z-index: 200;
+    background-color: rgba(255,255,255,.2);
+    height: 45px;  /*导航栏高*/
+    box-shadow: 1px 1px 8px #151515; /*盒子阴影，水平偏移，垂直偏移，模糊度，颜色*/
+}
+
+.top-logo {
+    width: 40px;
+}
+
+.top-logo a i {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.top-logo a i,
+.top-nav li a {
+    color: #0C0C0C;
+}
+
+.top-logo:hover i {
+    font-size: 40px;
+    transition-duration: 800ms;
+}
+
+.top-nav-menu {
+    /*消除layui中container的默认左右的15个padding*/
+    margin: 0 -15px;
+}
+
+.top-nav .top-nav-menu li {
+    float: left;  /* li 水平展开 */
+}
+
+.top-nav li a {
+    /*使li在父元素中居中*/
+    display: block;
+    text-align: center;
+    line-height: 45px;
+
+    padding: 0 10px;
+}
+
+.top-nav li a:hover {
+    color: #FD482C;
+    /*font-size: 14px;*/
+    background-color: rgba(255,255,255,.2);
+    /*过度*/
+    transition-duration: 300ms;
+}
+
+.top-banner {
+    /*为了使 top-banner的背景图显示在导航栏下面，使用定位流中z-index*/
+    position: relative;
+    z-index: 199;
+    height: 170px;
+    margin-top: -45px;
+    background-image: url("../imgs/banner.jpg");
+    background-repeat: no-repeat;
+}
+
+/*-------------以上，头部-----------------*/
+
+
+.info {
+    width: 330px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #a2c3ce;
+    margin-left: 10px;
+    box-shadow: 0px 1px 5px #222;
+}
+
+.info:hover {
+    box-shadow: 0px 0px 20px #222;
+    transition-duration: 800ms;
+}
+
+.info-head {
+    height: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #0099cc;
+    box-shadow: 1px 1px 5px #222;
+}
+
+.info-head img {
+    margin-left: 10px;
+    height: 30px;
+}
+
+.info-content {
+    padding: 5px 20px;
+    line-height: 33px;
+}
+
+/*---------以上，轮播图和通知------------*/
+
+.main-content {
+    position: relative;
+}
+
+.content-list {
+    /*内容区*/
+    position: relative;
+    margin-top: 50px;
+    /*background-color: #00FF00;*/
+}
+
+.content-title {
+    /*内容区的顶端文字*/
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.side-nav {
+    padding: 0 10px;
+    padding-top: 8px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #999999;
+}
+
+.side-nav li {
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-active {
+    color: #ffffff;
+    background-color: #0c0c0c;
+    transition-duration: 300ms;
+}
+
+.right-nav {
+    position: fixed;
+    /*left: 90%;*/
+    margin-left: 1200px;
+    bottom: 20%;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    box-shadow: 1px 3px 3px #cccccc;
+}
+
+.right-nav i {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.right-nav-item-first{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.right-nav-item-last{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.right-nav-item {
+    width: 45px;
+    height: 45px;
+    margin-top: 2px;
+    background-color: #0099cc;
+}
+
+.content-items, .side-nav {
+    margin: 10px 0;
+}
+
+.content-items {
+    /*background-color: #00F7DE;*/
+    padding-left: 10px;
+}
+
+.content-items iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.content-item {
+    height: 200px;
+    /*background-color: #0000FF;*/
+}
+
+.content-item:after {
+    /*在每个item后面添加一条横线*/
+    margin-top: 20px;
+    content: "";
+    display: block;
+    border-bottom: 1px solid #cccccc;
+}
+
+.content-item .item-content {
+    height: 100px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.content-item .item-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content-item .item-content-img{
+    /*background-color: #00FF00;*/
+    border-radius: 5px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+}
+
+.item-content-img img,
+.item-content-img{
+    width: 190px;
+    height: 105px;
+}
+
+.content-item .item-content-char {
+    margin-left: 15px;
+    /*文字溢出*/
+    overflow: hidden;
+    text-overflow:ellipsis;
+    /*white-space:normal;*/  /*单行溢出*/
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /*显示行数*/
+    -webkit-box-orient: vertical;
+}
+
+.item-anno {
+    margin-top: 10px;
+}
+
+/*---------------以上，主体内容------------------*/
+
+.footer {
+    color: #999999;
+    height: 280px;
+    margin-top: 50px;
+    padding-top: 20px;
+    background-color: #f6f9fa;
+}
+
+.circle {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-image: url("../imgs/footer.jpg");
+    border-radius: 50%;
+    margin: 30px 30px 30px 0;  /*上 右 下 左*/
+    shape-outside: circle();
+}
+
+.footer-content {
+    width: 80%;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.copyright-notice {
+    /*background-color: red;*/
+    margin-top: -228px;
+}
+
+.notice-item:after {
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 1.5px;
+    margin-left: 4px;
+    background-color: #999999;
+}
+
+.footer-right img{
+    width: 150px;
+    margin-top: -150px;
+}
+

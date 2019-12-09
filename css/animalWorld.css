@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    text-indent: 2em;
+    margin-bottom: 5px;
+}
+
+#carousel {
+    position: relative;
+    z-index: 199;
+}
+
+#panel {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(.1, .1, .1, .9);
+}
+
+#panel video {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -420px;
+}
+
+.panel-close{
+    position: absolute;
+    right: 0px;
+}
+
+.panel-close button {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+/*---------------------以上为视频播放面板--------------------------------------*/
+
+/*动物世界分页面的主体内容*/
+.an-content {
+    margin-top: 50px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
+
+/*视频总体样式*/
+.an-video {
+    /*background-color: green;*/
+}
+
+
+
+
+/*每个分类*/
+.an-video-item {
+    /*width: 70%;*/
+    margin-bottom: 45px;
+
+}
+
+.item-video {
+    padding: 5px 10px;
+    width: 70%;
+    background-color: #ebebeb;
+    box-shadow: 0 3px 3px #d3d3d3;
+}
+
+.item-video,
+.an-info {
+    height: 200px;
+}
+
+/*标题前的小方块*/
+.an-video-title:before {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 20px;
+    margin-left: -10px;
+    margin-right: 13px;
+    background-color: #0099cc;
+}
+
+/*分类标题*/
+.an-video-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*每个分类中的每个视频*/
+.video-list-item {
+    display: inline-block;
+    width: 190px;
+    height: 158px; /*不设置高，排版会不齐*/
+    margin: 25px 30px 0; /*上 左右 下*/
+    overflow: hidden;
+}
+
+/*每一个视频*/
+.video-list {
+    /*padding-top: 25px;*/
+    width: 190px;
+    height: 105px;
+}
+
+.video-list video {
+    border-radius: 5px;
+}
+
+/*每个视频说明*/
+.an-video-state {
+    color: #2E2D3C;
+}
+
+/*--------------以上为视频--------------------*/
+
+.an-info {
+    width: 26%;
+    margin: 0 22px;
+    padding: 6px 10px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+}
+
+.an-info-title {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.an-info-content {
+    /*line-height: 20px;*/
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>科普</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="layui/layui.js"></script>
+    <script src="jq/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="top-nav clearf">
+            <div class="container clearf">
+                <div class="top-logo fleft" ><a href="index.html" title="进入首页~"><i class="layui-icon layui-icon-tree" id="topLogo"></i></a></div>
+                <div class="top-nav-menu">
+                    <ul>
+                        <li><a href="index.html" title="科技改变生活">首页</a></li>
+                        <li><a href="secondPage/animalWorld.html" title="一起来看看奇妙的动物世界吧~" target="_blank">动物世界</a></li>
+                        <li><a href="secondPage/ChinaAerospace.html" title="来看看中国航天的进步吧~" target="_blank">中国航天</a></li>
+                    </ul>
+                    <ul class="fright">
+                        <li><a href="javascript:;" id="contribute" title="分享你的所见所闻~">投稿</a></li>
+                        <li><a href="javascript:;" id="contact" title="有什么想对我们说的呢？">联系我们</a></li>
+                        <li><a href="javascript:;" id="aboutUs" title="关于我们">关于我们<i class="layui-icon layui-icon-about" style="font-size: 14px;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top-banner"></div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="main-show clearf">
+                <!--轮播图-->
+                <div class="layui-carousel fleft" id="carousel">
+                    <div carousel-item>
+                        <div class="item"><a href="detail/ast$geo02.html" target="_blank"><img src="imgs/carousel01.jpg" alt=""></a></div>
+                        <div class="item"><a href="detail/animal$plant03.html" target="_blank"><img src="imgs/carousel02.jpg" alt=""></a></div>
+                        <div class="item"><a href="detail/ast$geo04.html" target="_blank"><img src="imgs/carousel03.jpg" alt=""></a></div>
+                        <div class="item"><a href="detail/science01.html" target="_blank"><img src="imgs/carousel04.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                <!--通知信息-->
+                <div class="info fright">
+                    <div class="info-head">
+                        站 内 通 知
+                        <img src="imgs/gif01.gif" alt="哎呀，挂掉了QAQ">
+                    </div>
+                    <div class="info-content">
+                        欢迎各位朋友访问本网站，本网站科普了关于天文地理、动植物、人文历史、健康养生、科学技术等方面的知识，您可以尽情的徜徉在知识的海洋中。如若有不足或者错误之处，敬请提出宝贵意见，我们将认真倾听并改正！
+                    </div>
+                </div>
+            </div>
+            <div class="content-list clearf">
+                <div class="content-title">每天看点小知识，丰富我们的生活 
+                    <img src="imgs/gif03.gif" alt="哎呀，挂掉了QAQ" style="height: 50px">
+                </div>
+                <div class="side-nav layui-col-xs1">
+                    <ul>
+                        <a href="javascript:;" id="astGeo"><li>天文地理 ></li></a>
+                        <a href="javascript:;" id="animalPlant"><li>动物植物 ></li></a>
+                        <a href="javascript:;" id="artHistory"><li>人文历史 ></li></a>
+                        <a href="javascript:;" id="health"><li>健康养生 ></li></a>
+                        <a href="javascript:;" id="life"><li>生活常识 ></li></a>
+                        <a href="javascript:;" id="science"><li>科学技术 ></li></a>
+                        <a href="javascript:;" id="opera"><li>戏曲文化 ></li></a>
+                        <a href="javascript:;" id="anecdote"><li>世界奇闻 ></li></a>
+                    </ul>
+                </div>
+                <div class="right-nav">
+                    <a href="javascript:scroll(0,0);" title="返回顶端"><div class="right-nav-item right-nav-item-first"><i class="layui-icon layui-icon-top"></i></div></a>
+                    <a href="#"><div class="right-nav-item" id="share" title="分享给你的朋友吧~"><i class="layui-icon layui-icon-share"></i></div></a>
+                    <a href="#"><div class="right-nav-item" id="collect" title="欢迎收藏~"><i class="layui-icon layui-icon-star-fill"></i></div></a>
+                    <a href="#last-bottom"><div class="right-nav-item right-nav-item-last" title="直达底端"><i class="layui-icon layui-icon-down"></i></div></a>
+                </div>
+                <!--文章，因未加入后端和数据库，故文章采用html页面存储信息。由JS控制点击不同类别加载响应信息（模仿AJAX）。-->
+                 <div class="content-items layui-col-xs11" id="contentItems"></div>
+				
+            </div>
+        </div>
+    </div>
+
+    <!--页尾-->
+    <div class="footer clearf">
+        <div class="container">
+            <!--左侧图片-->
+            <div class="circle clearf"></div>
+            <!--内容、文字-->
+            <div class="footer-content">
+                <div class="footer-title">科学 （认识世界的实践方法）</div>
+                科学，指的就是分科而学，后指将各种知识通过细化分类（如数学、物理、化学等）研究，形成逐渐完整的知识体系。它是关于探索自然规律的学问，是人类探索研究感悟宇宙万物变化规律的知识体系的总称。
+                科学是一个建立在可检验的解释和对客观事物的形式、组织等进行预测的有序的知识的系统。在一个旧的，密切相关的意思，“科学”还指可合理解释，并可靠地应用型知识的主体本身。科学的专业从业者习惯上被称为科学家。
+                自古典时代，科学作为一种知识，已紧密联系在一起。科学的方法奠定了基础，强调实验数据及其结果的重现性。在西方世界在近代早期的话：“科学”和“自然哲学“有时可以互换使用。在西方世界直到17世纪，自然哲学（后变成自然科学）被认为是哲学的一个独立的科学分支，与唯物同源。
+                在现代用法中，“科学”经常指的是追求知识，不但对知识本身的一种方式，它也经常受限于研究这些分支寻求解释物质世界的现象。在17世纪和18世纪的科学家越来越多地寻求在自然法则，如牛顿运动定律方面制定知识。而在19世纪的过程中，“科学”一词变得越来越与科学方法本身相关联，以研究自然世界有纪律的方法，包括物理、化学、地质学和生物学。它是在19世纪也使科学家一词是由博物学家区分自然知识和知识创造。
+                我们通常提到的科学是指自然科学，即通常将自然科学简称科学，并不包括社会学和思维学的内容。包括我们平时所说的科学技术（简称科技）中的科学也指的是自然科学（仅包括自然科学）。
+            </div>
+
+            <!--右侧图片-->
+            <div class="footer-right fright">
+                <img src="imgs/gif04.gif" alt="哎呀，挂掉了QAQ">
+                <div class="copyright-notice ">
+                    <div class="notice-item">科普类网页</div>
+                    <div class="notice-item">相关文章链接已注明来源</div>
+                    <div class="notice-item">联系方式：707327700@qq.com</div>
+                    <div class="notice-item">&copy网页制作by：张蒙·王枫·龙禄·尹婕</div>
+                    <div class="notice-item">&copy 2019 科普</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="last-bottom"></a>
+
+
+
+
+
+
+    <script>
+        layui.use('carousel', function(){
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#carousel'
+                ,width: '800px' //设置容器宽度
+                ,height: '300px'
+                ,arrow: 'hover' //始终显示箭头
+                ,anim: 'default' //切换动画方式
+                ,
+            });
+        });
+    </script>
+</body>
+</html>

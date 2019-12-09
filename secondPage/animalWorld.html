@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到动物世界~</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animalWorld.css">
+    <script src="../layui/layui.js"></script>
+    <script src="../jq/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <!--引入 头部导航栏和页尾 页面-->
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/secondPage.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div id="header"></div>
+
+    <!--轮播图-->
+    <div class="layui-carousel" id="carousel">
+        <div carousel-item>
+            <div class="item"><a href="javascript:;" target="_blank"><img src="../imgs/secondPageImgs/an-01.jpg" alt=""></a></div>
+            <div class="item"><a href="javascript:;" target="_blank"><img src="../imgs/secondPageImgs/an-02.jpg" alt=""></a></div>
+            <div class="item"><a href="javascript:;" target="_blank"><img src="../imgs/secondPageImgs/an-03.jpg" alt=""></a></div>
+            <div class="item"><a href="javascript:;" target="_blank"><img src="../imgs/secondPageImgs/an-04.jpg" alt=""></a></div>
+        </div>
+    </div>
+
+    <!--视频播放面板-->
+    <div id="panel">
+        <div class="panel-close" id="panelClose">
+            <button>关 闭</button>
+        </div>
+        <video src="../video/01.mp4" controls="controls" width="800px" height="400px"></video>
+    </div>
+
+    <!--主体内容-->
+    <div class="container">
+        <div class="an-content ">
+            <!--main.css中css样式-->
+            <div class="content-title">
+                动物世界的风起云涌
+            </div>
+            <hr>
+            <div class="an-video">
+                <div class="an-video-item clearf">
+                    <div class="item-video fleft">
+                        <div class="an-video-title">草原之王-狮子</div>
+                        <div class="an-video-list">
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="震惊！"><div class="video-list"><video src="../video/an-01.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">狮子挑衅河马，被秒杀！</div>
+                            </div>
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="究竟谁胜谁劣？"><div class="video-list"><video src="../video/an-02.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">老虎和狮子叫大PK</div>
+                            </div>
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="哇~"><div class="video-list"><video src="../video/an-03.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">母（懵）狮子我可是要吃你的！幼羚你不是我妈妈吗~结局太暖心</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="an-info fright">
+                        <div class="an-info-title">狮子（大型猫科动物）</div>
+                        <hr style="background-color: #a5a5a5">
+                        <div class="an-info-content">
+                            <p>狮子体型大，躯体均匀，四肢中长，趾行性。头大而圆，吻部较短，视、听、嗅觉均很发达。犬齿及裂齿极发达。</p>
+                            <p>生活在热带稀树草原和草地，也出现于灌木和旱林。肉食，常以伏击方式捕杀其他温血动物。分布于非洲草原、亚洲印度。在野外狮子活10到14年，圈养下更长寿，一般达二十余年。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="an-video-item clearf">
+                    <div class="item-video fleft">
+                        <div class="an-video-title">百兽之王-老虎</div>
+                        <div class="an-video-list">
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="不愧为百兽之王！"><div class="video-list"><video src="../video/04.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">老虎与美洲虎体型直观对比！</div>
+                            </div>
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="来看看德州的老虎~"><div class="video-list"><video src="../video/06.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">为什么德州有这么多的老虎？</div>
+                            </div>
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="好可爱QAQ"><div class="video-list"><video src="../video/05.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">双虎崽的诞生,你见过老虎生幼崽吗？</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="an-info fright">
+                        <div class="an-info-title">虎（哺乳纲动物）</div>
+                        <hr style="background-color: #a5a5a5">
+                        <div class="an-info-content">
+                            <p>老虎是典型的山地林栖动物，由南方的热带雨林、常绿阔叶林，以至北方的落叶阔叶林和针阔叶混交林，都能很好的生活。</p>
+                            <p>由于人类的猎杀和野外栖息地碎片化，虎成为珍稀濒危物种，被列为《华盛顿公约》CITES 附录Ⅰ级保护动物，《世界自然保护联盟濒危物种红色名录》（IUCN）濒危动物。2016年调查显示，全球野生虎的数量为3890只。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="an-video-item clearf">
+                    <div class="item-video fleft">
+                        <div class="an-video-title">梅花鹿</div>
+                        <div class="an-video-list">
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="一起来看看可爱的梅花鹿吧~"><div class="video-list"><video src="../video/07.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">这里的梅花鹿接近全国的一半！</div>
+                            </div>
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="你认识它们吗？"><div class="video-list"><video src="../video/08.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">学习认识鹦鹉、梅花鹿、小猪等陆地动物，熊小仁识动物</div>
+                            </div>
+                            <div class="video-list-item">
+                                <a href="javascript:;" title="天籁之音？"><div class="video-list"><video src="../video/09.mp4" width="190px" height="105px"></video></div></a>
+                                <div class="an-video-state">梅花鹿的叫声~</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="an-info fright">
+                        <div class="an-info-title">梅花鹿 （鹿科哺乳动物）</div>
+                        <hr style="background-color: #a5a5a5">
+                        <div class="an-info-content">
+                            <p>梅花鹿群居性不强，雄鹿往往是独自生活，活动时间集中在早晨和黄昏，生活区域随着季节的变化而改变，春季多在半阴坡，夏秋季迁到阴坡的林缘地带，冬季则喜欢在温暖的阳坡，主要以草、水果、草本植物、树芽、树、农作物为食。</p>
+                            <p>种群主要分布在俄罗斯东部、日本和中国。是中国国家一级保护动物，也是低危动物。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--页尾-->
+    <div id="footer"></div>
+
+    <script>
+        layui.use('carousel', function(){
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#carousel'
+                ,width: '100%' //设置容器宽度
+                ,height: '670px'
+                ,arrow: 'none' //始终显示箭头
+                ,anim: 'fade' //切换动画方式
+                ,
+            });
+        });
+    </script>
+</body>
+</html>
